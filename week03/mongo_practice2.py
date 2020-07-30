@@ -14,4 +14,3 @@ db.movies.update_many({'star': '9.41'}, {'$set': {'star': '0'}})
 docs = list(db.movies.find({'star': '9.41'}))
 print(docs)
 
-
