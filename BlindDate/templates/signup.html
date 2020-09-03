@@ -1,0 +1,253 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>블라인드 소개팅</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../static/resources/account/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../static/resources/account/css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+<div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+                <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
+                        </div>
+<!--                        <form class="user" method="post" action="/userSignup">-->
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input type="text" name="userId" class="form-control form-control-user" id="userId"
+                                           placeholder="아이디">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="password" name="password" class="form-control form-control-user"
+                                           id="password" placeholder="비밀번호">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input type="text" name="phone" class="form-control form-control-user" id="phone"
+                                           placeholder="핸드폰 번호">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="nick" class="form-control form-control-user" id="nick"
+                                           placeholder="닉네임">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <select name="local1" onchange="localChange(this)" class="form-control" id="local1"
+                                            value="">
+                                        <option selected>지역</option>
+                                        <option value="서울">서울</option>
+                                        <option value="경기">경기</option>
+                                        <option value="인천">인천</option>
+                                        <option value="부산">부산</option>
+                                        <option value="울산">울산</option>
+                                        <option value="경남">경남</option>
+                                        <option value="대구">대구</option>
+                                        <option value="경북">경북</option>
+                                        <option value="광주">광주</option>
+                                        <option value="전남">전남</option>
+                                        <option value="전북">전북</option>
+                                        <option value="대전">대전</option>
+                                        <option value="충남">충남</option>
+                                        <option value="충북">충북</option>
+                                        <option value="강원">강원</option>
+                                        <option value="제주">제주</option>
+                                        <option value="세종">세종</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="local2" class="form-control" id="local2">
+                                        <option selected>지역</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <select name="sex" onchange="sexChange(this)" class="form-control" id="sex"
+                                            value="">
+                                        <option selected>성별</option>
+                                        <option value="M">남자</option>
+                                        <option value="F">여자</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select name="age" class="form-control" id="age">
+                                        <option selected>나이</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                    <select name="appeal" class="form-control" id="appeal">
+                                        <option selected>매력</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                    <select name="ideal" class="form-control" id="ideal">
+                                        <option selected>이상형</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button onclick="signup()" type="submit" class="btn btn-primary btn-user btn-block">
+                                회원가입
+                            </button>
+                            <hr>
+<!--                        </form>-->
+                        <div class="text-center">
+                            <a class="small" href="./">홈으로 가기</a>
+                        </div>
+                        <div class="text-center">
+                            <a class="small" href="/login">로그인 하러가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../static/resources/account/vendor/jquery/jquery.min.js"></script>
+<script src="../static/resources/account/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="../static/resources/account/js/change.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="../static/resources/account/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="../static/resources/account/js/sb-admin-2.min.js"></script>
+
+<script>
+
+    function isCellPhone(p) {
+        let regExp = /^(01[016789]{1}|02|0[3-9]{1}[0-9]{1})[-][0-9]{3,4}[-][0-9]{4}$/;
+        return regExp.test(p);
+    }
+
+    function signup() {
+        let userId = $("#userId").val();
+        let nick = $("#nick").val();
+        let password = $("#password").val();
+        let phone = $("#phone").val();
+        let local1 = $("#local1").val();
+        let local2 = $("#local2").val();
+        let sex = $("#sex").val();
+        let age = $("#age").val();
+        let appeal = $("#appeal").val();
+        let ideal = $("#ideal").val();
+
+        if (userId == "") {
+            alert("아이디 입력해주세요")
+            $("#userId").focus()
+            return
+        } else if (nick == "") {
+            alert("닉네임을 입력해주세요")
+            $("#nick").focus()
+            return
+        } else if (password == "") {
+            alert("비밀번호를 입력해주세요")
+            $("#password").focus()
+            return
+        } else if (phone == "") {
+            alert("휴대폰번호를 입력해주세요")
+            $("#phone").focus()
+            return
+        } else if (!isCellPhone(phone)) {
+            alert("휴대폰번호 입력 형식이 틀립니다. \n 010-0000-0000으로 입력해주세요")
+            return
+        } else if (local1 == "지역") {
+            alert("지역을 선택해주세요")
+            $("#local1").focus()
+            return
+        } else if (sex == "성별") {
+            alert("성별을 선택해주세요")
+            $("#sex").focus()
+            return
+        } else if (age == "나이") {
+            alert("나이를 선택해주세요")
+            $("#age").focus()
+            return
+        } else if (appeal == "매력") {
+            alert("매력을 선택해주세요")
+            $("#appeal").focus()
+            return
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "/info",
+            data: {
+                'userId' :userId,
+                'nick' :nick,
+                'password' :password,
+                'phone' :phone,
+                'local1' :local1,
+                'local2' :local2,
+                'sex' :sex,
+                'age' :age,
+                'appeal' :appeal,
+                'ideal' :ideal
+            },
+            success: function (response) {
+                if (response["result"] == "success") {
+                    alert('회원가입 완료');
+                    history.back();
+                }
+            }
+        })
+
+    }
+
+
+</script>
+
+</body>
+
+</html>
